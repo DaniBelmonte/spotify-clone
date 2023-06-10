@@ -8,11 +8,6 @@
 import SwiftUI
 import UIKit
 
-struct Album {
-    let name: String
-    let secondaryTitle: String
-}
-
 struct ContentView: View {
     @State private var selection = 0
 
@@ -99,79 +94,6 @@ struct ContentView: View {
         }
     }
 }
-
-
-struct HomeView: View {
-    var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            VStack {
-                SectionView(title: "Your shows", data: [
-                    Album(name: "Ted Talks", secondaryTitle: "Ideas worth spreading"),
-                    Album(name: "Developer Podcast", secondaryTitle: "A podcast for developers"),
-                    Album(name: "Ted Talks ES", secondaryTitle: "Charlas para inspirarte")
-                ])
-                .frame(height: 220)
-
-                SectionView(title: "More of what you like", data: [
-                    Album(name: "Relax Hits", secondaryTitle: "Chill and relax"),
-                    Album(name: "Soft Pop Hits", secondaryTitle: "Soft pop tunes"),
-                    Album(name: "Today's Hits", secondaryTitle: "Today's top hits"),
-                    Album(name: "Happy Hits", secondaryTitle: "Feel good tunes")
-                ])
-                .frame(height: 220)
-
-                SectionView(title: "Recently played", data: [
-                    Album(name: "Daily Mix 1", secondaryTitle: "Mix of your favorites"),
-                    Album(name: "Daily Mix 4", secondaryTitle: "More of your favorites")
-                ])
-                .frame(height: 220)
-
-            }
-        }
-    }
-}
-
-struct SectionView: View {
-    let title: String
-    let data: [Album]
-
-    let gridLayout = [
-        GridItem(.adaptive(minimum: 100))
-    ]
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(title)
-                .font(.system(size: 20)).bold()
-                .padding(.leading)
-                .padding(.bottom, 4)
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: gridLayout, spacing: 10) {
-                    ForEach(data, id: \.name) { item in
-                        VStack(alignment: .leading) {
-                            Color.green
-                                .frame(height: 130)
-                                .cornerRadius(10)
-                            VStack(alignment: .leading) {
-                                Text(item.name)
-                                    .font(.system(size: 14))
-                                Text(item.secondaryTitle)
-                                    .font(.system(size: 12))
-                            }
-                            .frame(width: 120, height: 30, alignment: .leading)
-                        }
-                        .frame(width: 130, alignment: .leading)
-
-                    }
-                }
-                .padding(.leading)
-                .fixedSize()
-            }
-            
-        }
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
