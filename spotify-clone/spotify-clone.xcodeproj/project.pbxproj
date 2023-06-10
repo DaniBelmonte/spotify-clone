@@ -110,7 +110,6 @@
 		337D37E82A349CAC00901364 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				33F2F8CE29BDE66400BD01A3 /* Preview Content */,
 				33F2F8CC29BDE66400BD01A3 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -139,6 +138,7 @@
 				337D37E42A349C5800901364 /* Services */,
 				337D37E02A349C1D00901364 /* Utilities */,
 				337D37E12A349C2A00901364 /* Supporting Files */,
+				33F2F8CE29BDE66400BD01A3 /* Preview Content */,
 				337D37E82A349CAC00901364 /* Resources */,
 			);
 			path = "spotify-clone";
