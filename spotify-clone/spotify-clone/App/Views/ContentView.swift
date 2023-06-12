@@ -42,54 +42,7 @@ struct ContentView: View {
             }
             .accentColor(.white)
 
-            VStack {
-                Spacer()
-                HStack {
-                    Image("adele")
-                        .resizable()
-                        .font(.title)
-                        .frame(width: 40, height: 50, alignment: .center)
-                        .cornerRadius(10)
-                        .padding(.leading, 4)
-                        .padding(.top, 4)
-                        .padding(.bottom, 4)
-
-                    VStack (alignment: .leading) {
-                        Text("Easy On Me")
-                            .font(.system(size: 14)).bold()
-                            .foregroundColor(.white)
-                        Text("Adele")
-                            .font(.system(size: 12))
-                            .foregroundColor(.white)
-                    }
-                    Spacer()
-                    HStack {
-                        Button(action: {
-                            // Handle like button action
-                        }) {
-                            Image(systemName: "heart")
-                                .foregroundColor(.white)
-                                .frame(width: 20, height: 20, alignment: .center)
-                        }
-                        Button(action: {
-                            // Handle pause button action
-                        }) {
-                            Image(systemName: "pause")
-                                .foregroundColor(.white)
-                                .frame(width: 20, height: 20, alignment: .center)
-                        }
-
-                        .padding(4)
-                    }
-                    .frame(width: 80, height: 40, alignment: .center)
-                }
-                .background(Color.brown)
-                .cornerRadius(10)
-                .padding(.bottom, 100)
-                .padding(.horizontal, 4)
-                .frame(maxWidth: .infinity)
-                .frame(height: 60)
-            }
+            MiniPlayerView()
         }
     }
 }

@@ -20,23 +20,6 @@ func showAlert(title: String, message: String) {
     }
 }
 
-// MARK: - String Extensions
-
-extension String {
-    /// Capitalizes the first letter of the string.
-    var capitalizedFirstLetter: String {
-        guard let firstLetter = self.first else {
-            return self
-        }
-        return firstLetter.uppercased() + self.dropFirst()
-    }
-    /// True when string contains only alphanumeric
-    var isAlphanumeric: Bool {
-        let alphanumericSet = CharacterSet.alphanumerics
-        return rangeOfCharacter(from: alphanumericSet.inverted) == nil
-    }
-}
-
 // MARK: - Unique ID
 
 /// Generates a unique ID.
