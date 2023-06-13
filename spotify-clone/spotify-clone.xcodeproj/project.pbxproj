@@ -18,6 +18,7 @@
 		33BBD7292A372DF0003C7531 /* MiniPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD7282A372DF0003C7531 /* MiniPlayerViewModel.swift */; };
 		33BBD72C2A373181003C7531 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD72B2A373181003C7531 /* UIImage.swift */; };
 		33BBD72E2A37371C003C7531 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD72D2A37371C003C7531 /* String.swift */; };
+		33BBD7302A375596003C7531 /* Adele - Easy On Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33BBD72F2A375595003C7531 /* Adele - Easy On Me.mp3 */; };
 		33F2F8C929BDE66100BD01A3 /* spotify_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2F8C829BDE66100BD01A3 /* spotify_cloneApp.swift */; };
 		33F2F8CB29BDE66100BD01A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2F8CA29BDE66100BD01A3 /* ContentView.swift */; };
 		33F2F8CD29BDE66400BD01A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2F8CC29BDE66400BD01A3 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		33BBD7282A372DF0003C7531 /* MiniPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerViewModel.swift; sourceTree = "<group>"; };
 		33BBD72B2A373181003C7531 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		33BBD72D2A37371C003C7531 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		33BBD72F2A375595003C7531 /* Adele - Easy On Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adele - Easy On Me.mp3"; sourceTree = "<group>"; };
 		33F2F8C529BDE66100BD01A3 /* spotify-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spotify-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F2F8C829BDE66100BD01A3 /* spotify_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotify_cloneApp.swift; sourceTree = "<group>"; };
 		33F2F8CA29BDE66100BD01A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				33F2F8CC29BDE66400BD01A3 /* Assets.xcassets */,
+				33BBD72F2A375595003C7531 /* Adele - Easy On Me.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BBD7302A375596003C7531 /* Adele - Easy On Me.mp3 in Resources */,
 				33F2F8D029BDE66400BD01A3 /* Preview Assets.xcassets in Resources */,
 				33F2F8CD29BDE66400BD01A3 /* Assets.xcassets in Resources */,
 			);

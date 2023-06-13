@@ -10,4 +10,5 @@ import Foundation
 class MiniPlayerViewModel: ObservableObject {
     @Published var isPlaying = false
     @Published var isFavorite = false
+    @Published var progress: Double = 0.0
 }

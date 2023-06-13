@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct MiniPlayerView: View {
     @StateObject private var viewModel = MiniPlayerViewModel()
     @State private var backgroundColor: Color = .clear
+    @State private var audioPlayer: AVAudioPlayer!
+    @State private var timer: Timer?
+
+
+    fileprivate func setupAudioPlayer() {
+        let sound = Bundle.main.path(forResource: "Adele - Easy On Me", ofType: "mp3")
+        self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+    }
 
     var body: some View {
         VStack {
@@ -44,6 +53,15 @@ struct MiniPlayerView: View {
                         }
                         Button(action: {
                             viewModel.isPlaying.toggle()
+                            if viewModel.isPlaying {
+                                audioPlayer?.play()
+                                startTimer()
+                                print("play")
+                            } else {
+                                audioPlayer?.pause()
+                                stopTimer()
+                                print("pause")
+                            }
                         }) {
                             Image(systemName: viewModel.isPlaying ? "pause" : "play.fill")
                                 .foregroundColor(.white)
@@ -53,7 +71,7 @@ struct MiniPlayerView: View {
                     }
                     .frame(width: 80, height: 40, alignment: .center)
                 }
-                ProgressView(value: 0.2)
+                ProgressView(value: viewModel.progress)
                     .padding(0)
                     .tint(.white)
                     .frame(height: 1)
@@ -66,13 +84,40 @@ struct MiniPlayerView: View {
             .frame(height: 60)
         } .onAppear {
             setAverageColor()
+            setupAudioPlayer()
+        } .onDisappear {
+            stopTimer()
+            audioPlayer.pause()
         }
     }
 
+    // MARK: - Functions
     private func setAverageColor() {
         if let image = UIImage(named: "adele") {
-            var averageColor = Color(uiColor: image.averageColor ?? .clear)
+            let averageColor = Color(uiColor: image.averageColor ?? .clear)
             backgroundColor = averageColor
+        }
+    }
+
+    private func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+            guard let audioPlayer = audioPlayer else {
+                return
+            }
+
+            viewModel.progress = audioPlayer.currentTime / audioPlayer.duration
+        }
+    }
+
+    private func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+
+    // MARK: - Preview
+    struct MiniPlayerView_Previews: PreviewProvider {
+        static var previews: some View {
+            MiniPlayerView()
         }
     }
 }

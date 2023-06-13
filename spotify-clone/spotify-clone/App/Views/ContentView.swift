@@ -12,8 +12,8 @@ struct ContentView: View {
 
     init() {
         UITabBar.appearance().isTranslucent = false
-        UITabBar.appearance().backgroundColor = .systemGray
-        UITabBar.appearance().barTintColor = .systemGray
+        UITabBar.appearance().backgroundColor = UIColor(named: "tabbarGray")
+        UITabBar.appearance().barTintColor = UIColor(named: "tabbarGray")
         UITabBar.appearance().unselectedItemTintColor = .systemGray4
     }
 
