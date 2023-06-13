@@ -19,6 +19,7 @@
 		33BBD72C2A373181003C7531 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD72B2A373181003C7531 /* UIImage.swift */; };
 		33BBD72E2A37371C003C7531 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD72D2A37371C003C7531 /* String.swift */; };
 		33BBD7302A375596003C7531 /* Adele - Easy On Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33BBD72F2A375595003C7531 /* Adele - Easy On Me.mp3 */; };
+		33BBD7322A38649B003C7531 /* HomeRecentlySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BBD7312A38649B003C7531 /* HomeRecentlySectionView.swift */; };
 		33F2F8C929BDE66100BD01A3 /* spotify_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2F8C829BDE66100BD01A3 /* spotify_cloneApp.swift */; };
 		33F2F8CB29BDE66100BD01A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2F8CA29BDE66100BD01A3 /* ContentView.swift */; };
 		33F2F8CD29BDE66400BD01A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2F8CC29BDE66400BD01A3 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		33BBD72B2A373181003C7531 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		33BBD72D2A37371C003C7531 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		33BBD72F2A375595003C7531 /* Adele - Easy On Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adele - Easy On Me.mp3"; sourceTree = "<group>"; };
+		33BBD7312A38649B003C7531 /* HomeRecentlySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecentlySectionView.swift; sourceTree = "<group>"; };
 		33F2F8C529BDE66100BD01A3 /* spotify-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spotify-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F2F8C829BDE66100BD01A3 /* spotify_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotify_cloneApp.swift; sourceTree = "<group>"; };
 		33F2F8CA29BDE66100BD01A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				337D37D92A34996F00901364 /* HomeView.swift */,
 				33F2F8CA29BDE66100BD01A3 /* ContentView.swift */,
 				33BBD7262A372D91003C7531 /* MiniPlayerView.swift */,
+				33BBD7312A38649B003C7531 /* HomeRecentlySectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				337D37EA2A349D8200901364 /* Helpers.swift in Sources */,
 				337D37DA2A34996F00901364 /* HomeView.swift in Sources */,
 				337D37DE2A3499AB00901364 /* HomeSectionView.swift in Sources */,
+				33BBD7322A38649B003C7531 /* HomeRecentlySectionView.swift in Sources */,
 				33F2F8C929BDE66100BD01A3 /* spotify_cloneApp.swift in Sources */,
 				337D37D42A34991F00901364 /* Album.swift in Sources */,
 				33BBD7272A372D91003C7531 /* MiniPlayerView.swift in Sources */,
