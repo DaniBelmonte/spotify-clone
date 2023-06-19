@@ -43,7 +43,6 @@ struct HomeSectionView: View {
                 .padding(.leading)
                 .fixedSize()
             }
-
         }
     }
 }

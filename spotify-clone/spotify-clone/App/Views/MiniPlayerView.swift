@@ -14,7 +14,6 @@ struct MiniPlayerView: View {
     @State private var audioPlayer: AVAudioPlayer!
     @State private var timer: Timer?
 
-
     fileprivate func setupAudioPlayer() {
         let sound = Bundle.main.path(forResource: "Adele - Easy On Me", ofType: "mp3")
         self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
@@ -56,11 +55,9 @@ struct MiniPlayerView: View {
                             if viewModel.isPlaying {
                                 audioPlayer?.play()
                                 startTimer()
-                                print("play")
                             } else {
                                 audioPlayer?.pause()
                                 stopTimer()
-                                print("pause")
                             }
                         }) {
                             Image(systemName: viewModel.isPlaying ? "pause" : "play.fill")
@@ -104,7 +101,6 @@ struct MiniPlayerView: View {
             guard let audioPlayer = audioPlayer else {
                 return
             }
-
             viewModel.progress = audioPlayer.currentTime / audioPlayer.duration
         }
     }
