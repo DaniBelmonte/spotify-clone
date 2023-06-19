@@ -14,10 +14,15 @@ struct HomeView: View {
         ScrollView(.vertical, showsIndicators: false) {
             HStack() {
                 Text("Good Morning")
-                    .padding(4)
                     .font(.system(.title))
                 Spacer()
+                HStack(spacing: 12) {
+                    Image(systemName: "bell")
+                    Image(systemName: "gearshape")
+                }
             }
+            .padding(10)
+
             HStack(spacing: 0) {
                 VStack(spacing: 4) {
                     ForEach(0...2, id: \.self) {_ in
@@ -26,7 +31,7 @@ struct HomeView: View {
                     .cornerRadius(4)
                 }
                 .background(.black)
-                .padding(4)
+                .padding(8)
                 .frame(width: UIScreen.main.bounds.width / 2)
 
                 VStack(spacing: 4) {
@@ -37,7 +42,7 @@ struct HomeView: View {
                     .frame(alignment: .leading)
                 }
                 .background(.black)
-                .padding(4)
+                .padding(8)
                 .frame(width: UIScreen.main.bounds.width / 2)
             }
 
