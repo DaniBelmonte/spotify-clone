@@ -28,7 +28,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .tag(0)
 
-                HomeView()
+                SearchView()
                     .tabItem {
                         Label("Search", systemImage: "magnifyingglass")
                     }

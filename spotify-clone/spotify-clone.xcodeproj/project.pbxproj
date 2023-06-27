@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334049762A4425E300393432 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334049752A4425E300393432 /* SearchView.swift */; };
 		337D37D12A3498B000901364 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D37D02A3498B000901364 /* HomeViewModel.swift */; };
 		337D37D42A34991F00901364 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D37D32A34991F00901364 /* Album.swift */; };
 		337D37D62A34992D00901364 /* AlbumSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D37D52A34992D00901364 /* AlbumSection.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		334049752A4425E300393432 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		337D37D02A3498B000901364 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		337D37D32A34991F00901364 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		337D37D52A34992D00901364 /* AlbumSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSection.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				33F2F8CA29BDE66100BD01A3 /* ContentView.swift */,
 				33BBD7262A372D91003C7531 /* MiniPlayerView.swift */,
 				33BBD7312A38649B003C7531 /* HomeRecentlySectionView.swift */,
+				334049752A4425E300393432 /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				33BBD7322A38649B003C7531 /* HomeRecentlySectionView.swift in Sources */,
 				33F2F8C929BDE66100BD01A3 /* spotify_cloneApp.swift in Sources */,
 				337D37D42A34991F00901364 /* Album.swift in Sources */,
+				334049762A4425E300393432 /* SearchView.swift in Sources */,
 				33BBD7272A372D91003C7531 /* MiniPlayerView.swift in Sources */,
 				33BBD72C2A373181003C7531 /* UIImage.swift in Sources */,
 				33BBD7292A372DF0003C7531 /* MiniPlayerViewModel.swift in Sources */,
