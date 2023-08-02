@@ -37,7 +37,6 @@ struct HomeSectionView: View {
                             .frame(width: 120, height: 30, alignment: .leading)
                         }
                         .frame(width: 130, alignment: .leading)
-
                     }
                 }
                 .padding(.leading)
